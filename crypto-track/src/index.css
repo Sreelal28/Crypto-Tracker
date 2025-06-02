@@ -11,27 +11,21 @@ a {
 .app {
   min-height: 100vh;
   color: white;
-  background: linear-gradient(#0b004e, #1d152f, #002834);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 10%;
-  color: #ddd;
-  border-bottom: 2px solid #3c3c3c;
+  color: #ffffff;
+  border-bottom: 2px solid #141e30;
 }
 .logo {
-  width: 100px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 80px;
   height: 50px;
-}
-.navbar ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-}
-.navbar li {
-  cursor: pointer;
 }
 .nav-right {
   display: flex;
@@ -39,27 +33,15 @@ a {
   gap: 12px;
 }
 .navbar select {
-  padding: 5px 8px;
+  padding: 10px 16px;
   border-radius: 6px;
-  border: 2px solid white;
+  border: 2px solid #6c9e78;
   background: transparent;
   color: white;
 }
 .navbar option {
-  background-color: #09005c;
+  background-color: rgb(66, 44, 44);
   color: white;
-}
-.navbar button {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #393939;
-  background: white;
-  border: none;
-  cursor: pointer;
 }
 .home {
   padding: 0px 10px;
@@ -79,7 +61,7 @@ a {
 }
 .hero p {
   width: 75%;
-  color: #e3e3e3;
+  color: #9aaec6;
   line-height: 1.5;
 }
 .hero form {
@@ -102,7 +84,7 @@ a {
 }
 .hero button {
   border: none;
-  background: #7927ff;
+  background: #7f5af0;
   color: white;
   font-size: 16px;
   padding: 10px 30px;
@@ -112,7 +94,10 @@ a {
 .crypto-table {
   max-width: 800px;
   margin: auto;
-  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+  background: linear-gradient(
+    rgba(30, 144, 255, 0.15),
+    rgba(105, 2, 153, 0.15)
+  );
   border-radius: 15px;
 }
 .table-layout {
@@ -120,7 +105,7 @@ a {
   grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
   padding: 15px 20px;
   align-items: center;
-  border-bottom: 1px solid #3c3c3c;
+  border-bottom: 1px solid #2c3e50;
 }
 .market-cap {
   text-align: right;
@@ -160,14 +145,11 @@ a {
   .navbar {
     padding: 20px 5%;
   }
-  .navbar ul {
-    display: none;
-  }
   .navbar button img {
     width: 12px;
   }
   .table-layout {
-    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    grid-template-columns: 0.5fr 2.5fr 1fr 1fr;
   }
   .market-cap {
     display: none;
@@ -236,7 +218,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
-  border-bottom: 1px solid #5f5d5f;
+  border-bottom: 1px solid #2f3640;
   list-style: none;
 }
 .coin-info ul li:last-child {

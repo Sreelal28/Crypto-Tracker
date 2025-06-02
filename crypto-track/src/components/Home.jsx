@@ -25,13 +25,8 @@ export default function Home() {
   return (
     <div className="home">
       <div className="hero">
-        <h1>
-          Largest <br /> Crypto Marketplace
-        </h1>
-        <p>
-          Welcome to the world's cryptocurrency marketplace. Sign up to explore
-          more about cryptos
-        </p>
+        <h1>Crypto Marketplace</h1>
+        <p>Welcome to Cryptocurrency Marketplace.</p>
         <form onSubmit={searchHandler}>
           <input
             onChange={inputHandler}
