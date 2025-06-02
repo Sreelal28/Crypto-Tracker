@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "Josefin Sans";
   box-sizing: border-box;
 }
 
@@ -84,7 +87,7 @@ a {
 }
 .hero button {
   border: none;
-  background: #7f5af0;
+  background: #a80808;
   color: white;
   font-size: 16px;
   padding: 10px 30px;
@@ -176,7 +179,7 @@ a {
   height: 65px;
   place-self: center;
   border: 5px solid #bdbdbd;
-  border-top-color: #4500c6;
+  border-top-color: #310cb6;
   border-radius: 50%;
   animation: rotate 2s infinite;
 }
