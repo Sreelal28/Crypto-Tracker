@@ -20,7 +20,7 @@ export default function CreateBook() {
     };
     setLoading(true);
     axios
-      .post("http://localhost:7000/books", data)
+      .post(`${import.meta.env.VITE_APP_API_BASE_URL}/books`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Created successfully", { variant: "success" });

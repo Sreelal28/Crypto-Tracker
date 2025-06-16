@@ -16,10 +16,8 @@ export default function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:7000/books")
+      .get(`${import.meta.env.VITE_APP_API_BASE_URL}/books`)
       .then((response) => {
-        console.log("api:", response);
-
         setBooks(response.data.books);
         setLoading(false);
       })

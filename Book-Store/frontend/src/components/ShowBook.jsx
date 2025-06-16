@@ -11,7 +11,7 @@ export default function ShowBook() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`${import.meta.env.VITE_APP_API_BASE_URL}/books/${id}`)
       .then((response) => {
         setBook(response.data);
         setLoading(false);
@@ -44,7 +44,7 @@ export default function ShowBook() {
           </div>
           <div className="my-4">
             <span className="text-xl mr-4 text-gray-500">Publish Year</span>
-            <span>{book.publishYear}</span>
+            <span>{book.publishedYear}</span>
           </div>
           <div className="my-4">
             <span className="text-xl mr-4 text-gray-500">Create Time</span>

@@ -16,16 +16,16 @@ export default function EditBook() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:7000/books/${id}`)
+      .get(`${import.meta.env.VITE_APP_API_BASE_URL}/books/${id}`)
       .then((response) => {
         setAuthor(response.data.author);
-        setPublishYear(response.data.publishYear);
+        setPublishedYear(response.data.publishedYear);
         setTitle(response.data.title);
         setLoading(false);
       })
       .catch((error) => {
         setLoading(false);
-        alert("An error happened. Please Chack console");
+        alert("An error happened. Please Check console");
         console.log(error);
       });
   }, []);
@@ -37,7 +37,7 @@ export default function EditBook() {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:7000/books/${id}`, data)
+      .put(`${import.meta.env.VITE_APP_API_BASE_URL}/books/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Edited successfully", { variant: "success" });
@@ -79,8 +79,8 @@ export default function EditBook() {
           <label className="text-xl mr-4 text-gray-500">Publish Year</label>
           <input
             type="number"
-            value={publishYear}
-            onChange={(e) => setPublishYear(e.target.value)}
+            value={publishedYear}
+            onChange={(e) => setPublishedYear(e.target.value)}
             className="border-2 border-gray-500 px-4 py-2  w-full "
           />
         </div>
